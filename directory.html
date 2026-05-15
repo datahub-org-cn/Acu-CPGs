@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Acu-CPGs Directory Structure</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background: #1e1e1e;
+      color: #d4d4d4;
+      padding: 40px;
+      font-size: 15px;
+    }
+    h2 {
+      color: #9cdcfe;
+      margin-bottom: 24px;
+      font-family: sans-serif;
+    }
+    .tree { line-height: 1.8; }
+    .folder { color: #e8c07d; }
+    .file-xlsx { color: #4ec9b0; }
+    .file-py { color: #569cd6; }
+    .file-txt { color: #ce9178; }
+    .file-md { color: #c586c0; }
+    .file-doc { color: #9cdcfe; }
+    .comment {
+      color: #6a9955;
+      margin-left: 8px;
+      font-size: 13px;
+    }
+    .indent1 { padding-left: 24px; }
+    .indent2 { padding-left: 48px; }
+    .indent3 { padding-left: 72px; }
+  </style>
+</head>
+<body>
+  <h2>Acu-CPGs — Project Directory Structure</h2>
+  <div class="tree">
+
+    <div><span class="folder">Acu-CPGs/</span></div>
+
+    <div class="indent1">├── <span class="file-txt">readme.txt</span><span class="comment"># Dataset overview</span></div>
+
+    <div class="indent1">├── <span class="folder">data/</span><span class="comment"># Raw dataset files</span></div>
+    <div class="indent2">├── <span class="file-xlsx">ZH_CPGs.xlsx</span><span class="comment"># Chinese acupuncture guidelines</span></div>
+    <div class="indent2">└── <span class="file-xlsx">EN_CPGs.xlsx</span><span class="comment"># English acupuncture guidelines</span></div>
+
+    <div class="indent1">└── <span class="folder">code/</span><span class="comment"># Processing & analysis scripts</span></div>
+    <div class="indent2">├── <span class="file-py">main.py</span><span class="comment"># Entry point</span></div>
+    <div class="indent2">├── <span class="file-py">baselib.py</span><span class="comment"># Shared utilities</span></div>
+    <div class="indent2">├── <span class="file-py">excel_2_sqlite.py</span><span class="comment"># Convert Excel to SQLite</span></div>
+    <div class="indent2">├── <span class="file-py">merge_excel.py</span><span class="comment"># Merge Excel files</span></div>
+    <div class="indent2">├── <span class="file-py">translate.py</span><span class="comment"># Translation utilities</span></div>
+    <div class="indent2">├── <span class="file-py">sql_hit.py</span><span class="comment"># SQL query helpers</span></div>
+    <div class="indent2">├── <span class="file-py">llms_test.py</span><span class="comment"># LLM integration tests</span></div>
+    <div class="indent2">├── <span class="file-py">text2sql_test.py</span><span class="comment"># Text-to-SQL tests</span></div>
+    <div class="indent2">├── <span class="file-txt">requirements.txt</span><span class="comment"># Python dependencies</span></div>
+    <div class="indent2">├── <span class="file-md">readme.md</span><span class="comment"># Code documentation</span></div>
+    <div class="indent2">├── <span class="folder">prompt/</span><span class="comment"># Prompt templates</span></div>
+    <div class="indent3">├── <span class="file-doc">structured prompt.docx</span></div>
+    <div class="indent3">└── <span class="file-doc">glossary.doc</span></div>
+    <div class="indent2">└── <span class="folder">dst_data/</span><span class="comment"># Output data</span></div>
+    <div class="indent3">└── <span class="file-xlsx">Case score.xlsx</span></div>
+
+  </div>
+</body>
+</html>
