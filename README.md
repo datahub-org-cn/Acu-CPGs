@@ -11,8 +11,8 @@ Acu-CPGs/
 ├── README.md
 ├── LICENSE
 ├── data/
-│   ├── ZH_CPGs.xlsx        # Chinese acupuncture guidelines
-│   └── EN_CPGs.xlsx        # English acupuncture guidelines
+│   ├── ZH_CPGs.xlsx        # acupuncture guidelines (Chinese Version)
+│   └── EN_CPGs.xlsx        # acupuncture guidelines (English Version)
 └── code/
     ├── main.py
     ├── baselib.py
